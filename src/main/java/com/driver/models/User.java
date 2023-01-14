@@ -74,6 +74,6 @@ public class User {
         this.blogList = blogList;
     }
 
-    @OneToMany(mappedBy = "blog",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
     private List<Blog> blogList;
 }
